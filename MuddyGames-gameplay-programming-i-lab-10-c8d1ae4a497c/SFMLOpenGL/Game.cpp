@@ -1,3 +1,7 @@
+//C00242944
+//Niamh Andrews
+//Helped by Micheal Rainsford Ryan
+
 #include <Game.h>
 
 static bool flip;
