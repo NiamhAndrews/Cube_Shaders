@@ -1,6 +1,6 @@
 //C00242944
 //Niamh Andrews
-//Helped by Micheal Rainsford Ryan
+//Helped by Michael Rainsford Ryan
 
 #include <Game.h>
 
