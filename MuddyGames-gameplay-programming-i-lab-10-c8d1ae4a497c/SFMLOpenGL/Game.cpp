@@ -237,13 +237,19 @@ void Game::initialize()
 		DEBUG_MSG("ERROR: Vertex Shader Compilation Error");
 	}
 
+
+
+	// ----------------------------------------------------------------------------------------------------------- SHADER STRENGHT INPUT
+
+
 	/* Fragment Shader which would normally be loaded from an external file */
 	const char* fs_src = "#version 400\n\r"
 		"in vec4 color;"
 		"out vec4 fColor;"
 		"void main() {"
-		"	fColor = color + vec4(0.7f, 0.0f, 0.0f, 0.3f);"
+		"	fColor = color + vec4(0.7f, 0.0f, 0.0f, 0.5f);"
 		"}"; //Fragment Shader Src
+
 
 	DEBUG_MSG("Setting Up Fragment Shader");
 

@@ -1,20 +1,20 @@
 #include "ShaderFileReader.h"
 
 
-// ------------------------------------------------------------------------------------- REWORD, ESPECIALLY COMMENTS
+
 
 
 std::string ShaderFileReader::readFile(const std::string t_fileName)
 {
-	std::ifstream inputFile; // Create the file pointer
-	inputFile.open("Shaders//" + t_fileName); // Open the file
+	std::ifstream inputFile;
+	inputFile.open("Shaders//" + t_fileName);
 
-	if (inputFile.is_open()) // Check that the file has opened successfully
+	if (inputFile.is_open())
 	{
 		std::string fileContents;
-		std::string line; // Holds one line of data
+		std::string line;
 
-		// Loop while getting lines add the contents string
+
 		while (std::getline(inputFile, line))
 		{
 			for (int character = 0; character < line.length(); character++)
@@ -45,9 +45,4 @@ std::string ShaderFileReader::readFile(const std::string t_fileName)
 		return fileContents;
 	}
 
-	//----------------------------------------------------------------- remove
-	else
-	{
-		throw(std::exception{ "can't open shader file." });
-	}
 }
